@@ -53,3 +53,16 @@ Este estilo solo puede ser aplicado a width y height pero no a padding.
 ## 7. Código Específico para cada navegador
 Obviamente este tipo de código solo funcionará en el navegador al que va destinado, pero es hay que pensar si es rentable puesto que solo algunos usuarios podrán apreciar esos cambio.
 ## 8. Espacio perdido
+No estoy seguro del porqué pero muchos diseñadores estan empeñados en desaprovechar el espacio en su código, usando un montón de innecesarios saltos de línea. Recuerda que eso sólo lo verás tu y estas haciendo un uso excesivo de ancho de banda. Tambien tu código será más facil de leer puesto que tendrá menos "boquetes".
+Por supuesto es sabio dejar un cierto espacio para mantenerlo legible, aunque a algunos les encanta condensar todo, no dejando ningún espacio.
+## 9. Especificar los colores sin usar palabras
+Definir los colores usando las palabras que lo definen no es una buena idea puesto que estaríamos confiando en el navegador para que el interprete que color y código debe aplicar.Las tonalidades para un mismo nombre de color cambian mucho de un navegador a otro.
+Es una buena práctica especificar siempre el color por su código hexadecimal.
+Ej.: utilizar "#fff" en lugar de blanco.
+## 10. Agrupar estilos idénticos
+Es común ver los estilo escritos una y otra vez con el mismo código, aún cuando el estilo es igual.
+Sería conveniente agruparlos y asi optimizaríamos espacio:
+h1, p, #footer, .intro {
+font-family:Arial,Helvetica,sans-serif;
+}
+Tambien nos hara mucho más facil la tarea de actualizar el código.

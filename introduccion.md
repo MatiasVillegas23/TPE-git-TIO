@@ -1,5 +1,3 @@
 # CSS
 
 ## ¿Qué es CSS?
-
-*
